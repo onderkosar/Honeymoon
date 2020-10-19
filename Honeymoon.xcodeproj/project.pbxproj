@@ -13,6 +13,7 @@
 		957E0A69253E34CB00550765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A68253E34CB00550765 /* Assets.xcassets */; };
 		957E0A6C253E34CB00550765 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A6B253E34CB00550765 /* Preview Assets.xcassets */; };
 		957E0A6F253E34CB00550765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A6D253E34CB00550765 /* LaunchScreen.storyboard */; };
+		957E0A79253E36A600550765 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A78253E36A600550765 /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		957E0A6B253E34CB00550765 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		957E0A6E253E34CB00550765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		957E0A70253E34CB00550765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957E0A78253E36A600550765 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +58,10 @@
 		957E0A61253E34C700550765 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
-				957E0A62253E34C700550765 /* AppDelegate.swift */,
-				957E0A64253E34C700550765 /* SceneDelegate.swift */,
-				957E0A66253E34C700550765 /* ContentView.swift */,
-				957E0A68253E34CB00550765 /* Assets.xcassets */,
-				957E0A6D253E34CB00550765 /* LaunchScreen.storyboard */,
+				957E0A7D253E370B00550765 /* View */,
+				957E0A7C253E370600550765 /* App */,
+				957E0A78253E36A600550765 /* Sounds */,
+				957E0A7B253E36DB00550765 /* Support */,
 				957E0A70253E34CB00550765 /* Info.plist */,
 				957E0A6A253E34CB00550765 /* Preview Content */,
 			);
@@ -73,6 +74,32 @@
 				957E0A6B253E34CB00550765 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		957E0A7B253E36DB00550765 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				957E0A62253E34C700550765 /* AppDelegate.swift */,
+				957E0A64253E34C700550765 /* SceneDelegate.swift */,
+				957E0A68253E34CB00550765 /* Assets.xcassets */,
+				957E0A6D253E34CB00550765 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		957E0A7C253E370600550765 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				957E0A66253E34C700550765 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		957E0A7D253E370B00550765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +161,7 @@
 			files = (
 				957E0A6F253E34CB00550765 /* LaunchScreen.storyboard in Resources */,
 				957E0A6C253E34CB00550765 /* Preview Assets.xcassets in Resources */,
+				957E0A79253E36A600550765 /* Sounds in Resources */,
 				957E0A69253E34CB00550765 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

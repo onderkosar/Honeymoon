@@ -13,7 +13,16 @@ struct ContentView: View {
     
     // MARK: - BODY
     var body: some View {
-        CardView(honeymoon: honeymoonData[1])
+        VStack {
+            HeaderView()
+            
+            Spacer()
+            
+            CardView(honeymoon: honeymoonData[2])
+                .padding()
+            
+            Spacer()
+        }
     }
 }
 

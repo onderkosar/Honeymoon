@@ -17,6 +17,7 @@
 		95D7E9F0253F225A00F49B66 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7E9EF253F225A00F49B66 /* HoneymoonModel.swift */; };
 		95D7E9F5253F229A00F49B66 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7E9F4253F229A00F49B66 /* HoneymoonData.swift */; };
 		95D7E9F8253F22EA00F49B66 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7E9F7253F22EA00F49B66 /* CardView.swift */; };
+		95D7E9FB253F25E500F49B66 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7E9FA253F25E500F49B66 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		95D7E9EF253F225A00F49B66 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		95D7E9F4253F229A00F49B66 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		95D7E9F7253F22EA00F49B66 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		95D7E9FA253F25E500F49B66 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				95D7E9F7253F22EA00F49B66 /* CardView.swift */,
+				95D7E9FA253F25E500F49B66 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				95D7E9F5253F229A00F49B66 /* HoneymoonData.swift in Sources */,
 				95D7E9F8253F22EA00F49B66 /* CardView.swift in Sources */,
 				957E0A67253E34C700550765 /* ContentView.swift in Sources */,
+				95D7E9FB253F25E500F49B66 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

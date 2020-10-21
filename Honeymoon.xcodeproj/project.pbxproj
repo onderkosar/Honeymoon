@@ -13,7 +13,10 @@
 		957E0A69253E34CB00550765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A68253E34CB00550765 /* Assets.xcassets */; };
 		957E0A6C253E34CB00550765 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A6B253E34CB00550765 /* Preview Assets.xcassets */; };
 		957E0A6F253E34CB00550765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A6D253E34CB00550765 /* LaunchScreen.storyboard */; };
-		957E0A79253E36A600550765 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 957E0A78253E36A600550765 /* Sounds */; };
+		9591069C254051FE0035FD78 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591069B254051FE0035FD78 /* CardTransition.swift */; };
+		959106A2254053F70035FD78 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959106A1254053F70035FD78 /* PlaySound.swift */; };
+		959106A8254055F90035FD78 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 959106A6254055F90035FD78 /* sound-rise.mp3 */; };
+		959106A9254055F90035FD78 /* sound-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 959106A7254055F90035FD78 /* sound-click.mp3 */; };
 		95A7B4A1253F842E002EA486 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7B4A0253F842E002EA486 /* HeaderComponent.swift */; };
 		95A7B4A5253F84CA002EA486 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7B4A4253F84CA002EA486 /* GuideComponent.swift */; };
 		95A7B4A8253F86A6002EA486 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7B4A7253F86A6002EA486 /* GuideView.swift */; };
@@ -37,7 +40,10 @@
 		957E0A6B253E34CB00550765 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		957E0A6E253E34CB00550765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		957E0A70253E34CB00550765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		957E0A78253E36A600550765 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		9591069B254051FE0035FD78 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
+		959106A1254053F70035FD78 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		959106A6254055F90035FD78 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		959106A7254055F90035FD78 /* sound-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-click.mp3"; sourceTree = "<group>"; };
 		95A7B4A0253F842E002EA486 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		95A7B4A4253F84CA002EA486 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
 		95A7B4A7253F86A6002EA486 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
@@ -82,15 +88,17 @@
 		957E0A61253E34C700550765 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				9591069F254053E80035FD78 /* Helper */,
+				9591069A254051EB0035FD78 /* Extension */,
 				95A7B4AD253F8D2B002EA486 /* Modifier */,
 				95A7B49F253F841E002EA486 /* Component */,
 				95D7E9F3253F229200F49B66 /* Data */,
 				95D7E9EE253F224E00F49B66 /* Model */,
 				957E0A7D253E370B00550765 /* View */,
 				957E0A7C253E370600550765 /* App */,
-				957E0A78253E36A600550765 /* Sounds */,
 				957E0A7B253E36DB00550765 /* Support */,
 				957E0A70253E34CB00550765 /* Info.plist */,
+				959106AB254056040035FD78 /* Sound */,
 				957E0A6A253E34CB00550765 /* Preview Content */,
 			);
 			path = Honeymoon;
@@ -133,6 +141,31 @@
 				95A7B4AA253F8C9D002EA486 /* InfoView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9591069A254051EB0035FD78 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9591069B254051FE0035FD78 /* CardTransition.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9591069F254053E80035FD78 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				959106A1254053F70035FD78 /* PlaySound.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		959106AB254056040035FD78 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				959106A7254055F90035FD78 /* sound-click.mp3 */,
+				959106A6254055F90035FD78 /* sound-rise.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		95A7B49F253F841E002EA486 /* Component */ = {
@@ -227,9 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959106A9254055F90035FD78 /* sound-click.mp3 in Resources */,
 				957E0A6F253E34CB00550765 /* LaunchScreen.storyboard in Resources */,
+				959106A8254055F90035FD78 /* sound-rise.mp3 in Resources */,
 				957E0A6C253E34CB00550765 /* Preview Assets.xcassets in Resources */,
-				957E0A79253E36A600550765 /* Sounds in Resources */,
 				957E0A69253E34CB00550765 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +279,7 @@
 				957E0A63253E34C700550765 /* AppDelegate.swift in Sources */,
 				95A7B4A5253F84CA002EA486 /* GuideComponent.swift in Sources */,
 				957E0A65253E34C700550765 /* SceneDelegate.swift in Sources */,
+				9591069C254051FE0035FD78 /* CardTransition.swift in Sources */,
 				95A7B4AF253F8D37002EA486 /* TitleModifier.swift in Sources */,
 				95A7B4AB253F8C9D002EA486 /* InfoView.swift in Sources */,
 				95D7E9F5253F229A00F49B66 /* HoneymoonData.swift in Sources */,
@@ -256,6 +291,7 @@
 				95A7B4B8253FA0AD002EA486 /* SymbolModifier.swift in Sources */,
 				957E0A67253E34C700550765 /* ContentView.swift in Sources */,
 				95D7E9FB253F25E500F49B66 /* HeaderView.swift in Sources */,
+				959106A2254053F70035FD78 /* PlaySound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
